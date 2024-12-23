@@ -1,0 +1,219 @@
+<html lang="en">
+<head>
+    <title>WILLOW WOODS- Menu</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            box-sizing: border-box;
+        }
+
+        *, *::before, *::after {
+            box-sizing: inherit;
+        }
+
+        header {
+            background: #4f0505;
+            color: #fff;
+            padding: 1px 5px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        header nav a {
+            text-decoration: none;
+            color: #f9f9f9;
+            font-weight: bold;
+            margin: 0 5px;
+            transition: color 0.3s ease;
+        }
+
+        header nav a:hover {
+            color: #ffdd57;
+        }
+
+        header h1 {
+            font-size: 1.5rem;
+        }
+
+        .menu-container {
+            padding: 1px;
+            background: #f9f9f9;
+            text-align: center;
+        }
+
+        .menu-container h1 {
+            font-size: 2rem;
+            color: #054c04;
+            margin-bottom: 15px;
+        }
+
+        .menu-items {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+        }
+
+        .menu-item {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 280px;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+
+        .menu-item img {
+            width: 100%;
+            height: 175px;
+            object-fit: cover;
+        }
+
+        .menu-item:hover {
+            transform: scale(1.05);
+        }
+
+        .menu-details {
+            padding: 5px;
+        }
+
+        .menu-details h3 {
+            font-size: 1.2rem;
+            color: #054c04;
+            margin-bottom: 5px;
+        }
+
+        .menu-details p {
+            font-size: 0.9rem;
+            color: #555;
+            margin-bottom: 5px;
+        }
+
+        .menu-details .price {
+            font-weight: bold;
+            font-size: 1rem;
+            color: #ff5722;
+        }
+
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 10px;
+        }
+
+        footer a {
+            color: #fbfbfb;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        footer a:hover {
+            color: #ffdd57;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.2rem;
+            }
+
+            .menu-items {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            .menu-item {
+                width: 100%;
+            }
+
+            header nav a {
+                margin: 0 5px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>WILLOW WOODS</h1>
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="reservation.html">Reservations</a>
+            <a href="contact.html">contact</a>
+            <a href="admin.html">Administration</a>
+        </nav>
+    </header>
+
+    <div class="menu-container">
+        <h1>Our Menu</h1>
+        <div class="menu-items">
+            <div class="menu-item">
+                <img src="poff.jpg" alt="poffertjes">
+                <div class="menu-details">
+                    <h3>Poffertjes</h3>
+                    <p>Probably one of the most famous Dutch dishes, Poffertjes are small pancakes, baked in an iron skillet, and traditionally served with melted butter and dusted with icing sugar.</p>
+                    <p class="price">₹250/-</p>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <img src="holland.jpeg" alt="holland">
+                <div class="menu-details">
+                    <h3>Hollandse nieuwe haring</h3>
+                    <p>Pickled fish always seems to be somewhat controversial in the UK. A dish that you may try once or twice, but not one that typically makes it to the dinner table of many homes.</p>
+                    <p class="price">₹350/-</p>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <img src="pann.jpg" alt="pannankoeken">
+                <div class="menu-details">
+                    <h3>Pannenkoeken</h3>
+                    <p>Unlike the thick and fluffy American variety, Dutch pannenkoeken (pancakes) have a thinner, crepe-like consistency with more surface area for delicious toppings.</p>
+                    <p class="price">₹250/-</p>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <img src="rijs.jpg" alt="Rijsttafel">
+                <div class="menu-details">
+                    <h3>Rijsttafel</h3>
+                    <p>Order a rijsttafel for the authentic Indish-Dutch experience, a medley of small dishes from all over the Spice Islands, developed in the times of Dutch colonisation to allow colonials to sample dishes from around Indonesia. </p>
+                    <p class="price">₹280/-</p>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <img src="kaas.jpg" alt="Kaaskroketten">
+                <div class="menu-details">
+                    <h3>Kaaskroketten</h3>
+                    <p>There are several typical Dutch deep-fried snacks, but almost all are made of meat or fish. The only vegetarian option, usually available in pubs and bars are cheese croquettes.</p>
+                    <p class="price">₹250/-</p>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <img src="friet.jpg" alt="friet">
+                <div class="menu-details">
+                    <h3>Friet</h3>
+                    <p>Dutch fries are often cut in wider pieces than the classic fries and they are always served with sauce. Usually it’s mayonnaise or sometimes ketchup</p>
+                    <p class="price">₹180/-</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 WILLOW WOODS. All rights reserved. | <a href="home.html">Back to Home</a></p>
+    </footer>
+
+</body>
+</html>
